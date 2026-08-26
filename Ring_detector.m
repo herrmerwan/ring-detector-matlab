@@ -4,9 +4,6 @@
 %MATLAB and attempts to make one have been unsuccessful as of now.
 %Anoter function called transpose is used from numpy for sub pixel
 %accuracy
-%curv threshold has been defined as  curv_thresh = median(prin_curv(:))-(curv_thresh_ratio*std(prin_curv(:)));
-% the threshold is in terms of how many standard deviations from the median
-% just to make the code run faster
 %Implemented my Marwan Malik, mamalik@ukaachen.de
 function rings = Ring_detector(img, Rmin, Rmax, kernal_size, circle_thresh, sigma, curv_thresh, vote_thresh, sub_pxl, grad)
     % Import the cv2, numpy and pandas modules
